@@ -19,7 +19,7 @@ function Count() {
 
 
     React.useEffect(() => {
-        axios.get("https://sanjit-yarn-trading-backend.herokuapp.com/visualisations/count-to-inquiries")
+        axios.get("http://127.0.0.1:4000/visualisations/count-to-inquiries")
             .then((response) => {
                 console.log("res data", response.data)
                 setData(response.data)

@@ -1,5 +1,5 @@
 import React from 'react'
-import '/Users/Sid/sanjitv2/front-end/src/components/Dashboard/dashboard.css'
+import './dashboard.css'
 import Navbar from '../Navbar/Navbar'
 import Cookies from 'js-cookie'
 import { Redirect, useParams } from 'react-router-dom'

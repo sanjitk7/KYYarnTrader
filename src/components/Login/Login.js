@@ -1,6 +1,6 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
-import '/Users/Sid/sanjitv2/front-end/src/components/Login/login.css'
+import './login.css'
 import Navbar from '../Navbar/Navbar'
 import axios from 'axios'
 import qs from 'qs'
@@ -32,7 +32,7 @@ function Login() {
                 "email": formState.email,
                 "password": formState.password
             }
-            axios.post("https://sanjit-yarn-trading-backend.herokuapp.com/employee/login", qs.stringify(payload), {
+            axios.post("http://127.0.0.1:4000/employee/login", qs.stringify(payload), {
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }

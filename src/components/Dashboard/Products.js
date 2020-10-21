@@ -22,7 +22,7 @@ function Products() {
         pPicture: ""
     })
     React.useEffect(() => {
-        axios.get("https://sanjit-yarn-trading-backend.herokuapp.com/products/summary").then(response => {
+        axios.get("http://127.0.0.1:4000/products/summary").then(response => {
             setProducts(response.data)
             console.log(response.data);
             setLoading(false)
@@ -40,7 +40,7 @@ function Products() {
     function HandleClick(product) {
         const id = product.pCode;
         setUpdate(1)
-        axios.delete("https://sanjit-yarn-trading-backend.herokuapp.com/products/" + id, {
+        axios.delete("http://127.0.0.1:4000/products/" + id, {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth")
             }
@@ -78,7 +78,7 @@ function Products() {
         console.log("stuck");
         // if (!(picture === undefined || picture === null)) {
         console.log("success");
-        axios.post("https://sanjit-yarn-trading-backend.herokuapp.com/products", final, {
+        axios.post("http://127.0.0.1:4000/products", final, {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth"),
                 "Content-Type": `multipart/form-data; boundary=${final._boundary}`
