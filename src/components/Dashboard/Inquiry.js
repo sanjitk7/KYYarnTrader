@@ -40,7 +40,7 @@ function Inquiries() {
                             <td>{product.estPurchaseSize}</td>
                             <td>{product.organisation}</td>
                             <td>{product.phoneNumber}</td>
-                            <td>{product.productsInq}</td>
+                            <td>{product.productInqCode}</td>
                             <td>{product.remark}</td>
                         </tr>)
                     }) : <td>Loading...</td>}
