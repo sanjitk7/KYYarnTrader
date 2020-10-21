@@ -1,0 +1,11 @@
+.site-header {
+  background-color: rgba(0, 0, 0, 1);
+}
+.site-header a {
+  color: rgb(230, 230, 230);
+  transition: ease-in-out color 0.15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
