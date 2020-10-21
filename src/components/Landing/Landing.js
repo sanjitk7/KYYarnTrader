@@ -7,44 +7,23 @@ function Landing() {
         <div>
             <Navbar />
             <main role="main">
-
+                <div id="box1"></div>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
+                            {/* <svg class="bd-placeholder-img" width="100%" height="100%" src="../../../public/img/yarn-carosel.svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg> */}
+                            <img src={require("./yarn-carosel.jpg")}></img>
                             <div class="container">
-                                <div class="carousel-caption text-left">
-                                    <h1>Example headline.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                                <div id="box1" class="carousel-caption text-left">
+                                    <h1 id="title">Kumar Yarns and Trading Pvt Ltd</h1>
+                                    <p id="hhh"> High Quality Yarn from 10% Polyester and 50% Recycled Cotton Fibre. Open End (OE) Spun Yarn in over 100 Colors. Looking for something? Leave us an inquiry.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h1>Another example headline.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
-                            <div class="container">
-                                <div class="carousel-caption text-right">
-                                    <h1>One more for good measure.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                                </div>
-                            </div>
-                        </div>
+            
                     </div>
                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -60,21 +39,21 @@ function Landing() {
 
                     <div class="row">
                         <div class="col-lg-4">
-                            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                            <h2>Heading</h2>
-                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <img src={require("./feature-tile-icon-05.svg")} class="bd-placeholder-img rounded-circle" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
+                            <h2>Quality Guaranteed</h2>
+                            <p>For over 20 years we have guaranteed our Yarn Quality. Return goods within 3 business days if not satisfactory**</p>
                             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                         </div>
                         <div class="col-lg-4">
-                            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                            <h2>Heading</h2>
-                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <img src={require("./feature-tile-icon-01.svg")} class="bd-placeholder-img rounded-circle" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
+                            <h2>On-time Delivery</h2>
+                            <p>We deliver in one or two business days from the day of invoice given that we are stocked on your purchase. For details visit out inventory section.</p>
                             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                         </div>
                         <div class="col-lg-4">
-                            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                            <h2>Heading</h2>
-                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            <img src={require("./feature-tile-icon-02.svg")} class="bd-placeholder-img rounded-circle" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
+                            <h2>Pay Online/via Cheque</h2>
+                            <p>Owing to the current pandemic we only take online payments either via Net Banking or via a Cheque posted to our address.</p>
                             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                         </div>
                     </div>
@@ -84,11 +63,13 @@ function Landing() {
 
                     <div class="row featurette">
                         <div class="col-md-7">
-                            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            <h2 class="featurette-heading">Quality Focused.  <span class="text-muted">Customer First.</span></h2>
+                            <p class="lead">For us Quality is everything. For great quality fabric and clothes it starts from great quality fibre. We obtain and stock first quality yarn obtained spun from high grade fibre. For other purposed yarn of lesser quality from recycled cotton is also available.</p>
                         </div>
                         <div class="col-md-5">
-                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                            {/* <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src={require("./tile-1.jpg")} preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></img> */}
+                            <br></br><br></br><br></br><br></br>
+                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src={require("./tile-1.jpg")}></img>
                         </div>
                     </div>
 
@@ -96,11 +77,13 @@ function Landing() {
 
                     <div class="row featurette">
                         <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            <h2 class="featurette-heading"> Values. <span class="text-muted">Employee Centered </span></h2>
+                            <p class="lead">We promote a healthy and robust work environment and culture. Our employees come from all spheres of life. The textile market is ever growing and flourishing. Come check us out if you are looking for a job!</p>
                         </div>
                         <div class="col-md-5 order-md-1">
-                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                            {/* <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> */}
+                            <br></br><br></br><br></br><br></br>
+                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src={require("./tile-5.jpg")}></img>
                         </div>
                     </div>
 
@@ -108,11 +91,13 @@ function Landing() {
 
                     <div class="row featurette">
                         <div class="col-md-7">
-                            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                            <h2 class="featurette-heading"> History and Reputation. <span class="text-muted">Trust.</span></h2>
+                            <p class="lead">Since we have been in the yarn market for longer than most others, we have a good understanding of customer expectation. We build trust and are always available to feedback. </p>
                         </div>
                         <div class="col-md-5">
-                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                            {/* <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> */}
+                            <br></br><br></br><br></br><br></br>
+                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src={require("./tile-4.jpg")}></img>
                         </div>
                     </div>
 
@@ -124,7 +109,7 @@ function Landing() {
 
                 <footer class="container">
                     <p class="float-right"><a href="#">Back to top</a></p>
-                    <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    <p>&copy; 1997-2020 Company, Inc.</p>
                 </footer>
             </main>
         </div>

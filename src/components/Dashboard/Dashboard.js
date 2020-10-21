@@ -8,6 +8,7 @@ import Products from '../Dashboard/Products'
 import Inquiries from '../Dashboard/Inquiry'
 import Create from '../Dashboard/Create'
 import Visual from '../Dashboard/Visual'
+import '../../../node_modules/react-vis/dist/style.css'
 
 function Dashboard() {
     const { page } = useParams();

@@ -19,7 +19,7 @@ function Product() {
             <div className="container mt-5">
                 <div className="jumbotron" style={{ backgroundColor: "#fff" }}>
                     <h1>Products</h1>
-                    <h3>Kumar Yarns offer the following products</h3>
+                    <h3>Currently available Products. Note that this page is constantly updated and you get real time data. Please leave us an inquiry if you are interested in a product.</h3>
                 </div>
                 <div className="card-columns mb-5">
                     {!loading ? products.map((product) => {
