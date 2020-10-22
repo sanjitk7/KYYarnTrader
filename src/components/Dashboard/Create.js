@@ -16,7 +16,7 @@ function Create() {
     function HandleSubmit(event) {
         event.preventDefault();
         setLoading("true")
-        axios.post("https://sanjit-yarn-trading-backend.herokuapp.com/employee/create-employee", qs.stringify(form), {
+        axios.post("http://127.0.0.1:4000/employee/create-employee", qs.stringify(form), {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth"),
                 "Content-Type": "application/x-www-form-urlencoded"

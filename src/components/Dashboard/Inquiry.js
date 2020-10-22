@@ -7,7 +7,7 @@ function Inquiries() {
     const [products, setProducts] = React.useState()
     const [loading, setLoading] = React.useState(true)
     React.useEffect(() => {
-        axios.get("https://sanjit-yarn-trading-backend.herokuapp.com/inquiry", {
+        axios.get("http://127.0.0.1:4000/inquiry", {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth")
             }

@@ -10,7 +10,7 @@ import {
 import axios from 'axios';
 
 
-//  Visualize which count got most inquires
+//  Visualize which count got most inquiries
 
 function Count() {
     const [data, setData] = React.useState()
@@ -19,7 +19,7 @@ function Count() {
 
 
     React.useEffect(() => {
-        axios.get("https://sanjit-yarn-trading-backend.herokuapp.com/visualisations/count-to-inquiries")
+        axios.get("http://127.0.0.1:4000/visualisations/count-to-inquiries")
             .then((response) => {
                 console.log("res data", response.data)
                 setData(response.data)
@@ -31,7 +31,7 @@ function Count() {
     }, [])
 
     return (<div className="Count">
-        <div>Yarn Count vs Inquires</div>
+        <div>Yarn Count vs Inquiries</div>
         <XYPlot height={300} width={700} color="#00000" xType="ordinal">
             <VerticalGridLines />
             <HorizontalGridLines />
@@ -41,7 +41,7 @@ function Count() {
                 text: { stroke: "none", fill: "#6b6b76", fontWeight: 600 },
                 title: { fill: "#6b6b76", fontWeight: 600 }
             }} />
-            <YAxis title="Inquires" style={{
+            <YAxis title="Inquiries" style={{
                 line: { stroke: "#285104" },
                 ticks: { stroke: "#ADDDE1" },
                 text: { stroke: "none", fill: "#6b6b76", fontWeight: 600 },

@@ -48,7 +48,7 @@ function Inquiry() {
     function HandleSubmit(event) {
         setStatus(1)
         event.preventDefault();
-        axios.post("https://sanjit-yarn-trading-backend.herokuapp.com/inquiry", inq, {
+        axios.post("http://127.0.0.1:4000/inquiry", inq, {
             headers: {
                 // "Content-Type": "application/x-www-form-urlencoded"
                 "Content-Type": "application/json"

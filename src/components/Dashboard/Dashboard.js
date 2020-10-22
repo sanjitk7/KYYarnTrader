@@ -1,5 +1,5 @@
 import React from 'react'
-import '/Users/Sid/sanjitv2/front-end/src/components/Dashboard/dashboard.css'
+import './dashboard.css'
 import Navbar from '../Navbar/Navbar'
 import Cookies from 'js-cookie'
 import { Redirect, useParams } from 'react-router-dom'
@@ -8,6 +8,7 @@ import Products from '../Dashboard/Products'
 import Inquiries from '../Dashboard/Inquiry'
 import Create from '../Dashboard/Create'
 import Visual from '../Dashboard/Visual'
+import '../../../node_modules/react-vis/dist/style.css'
 
 function Dashboard() {
     const { page } = useParams();
