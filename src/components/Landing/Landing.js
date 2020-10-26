@@ -6,7 +6,7 @@ function Landing() {
     return (
         <div>
             <Navbar />
-            <main role="main">
+            <main id="top" role="main">
                 <div id="box1"></div>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -15,7 +15,7 @@ function Landing() {
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             {/* <svg class="bd-placeholder-img" width="100%" height="100%" src="../../../public/img/yarn-carosel.svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg> */}
-                            <img src={require("./yarn-carosel.jpg")}></img>
+                            <img src={require("./yarn-carosel.jpg")} alt=""></img>
                             <div class="container">
                                 <div id="box1" class="carousel-caption text-left">
                                     <h1 id="title">Kumar Yarns and Trading Pvt Ltd</h1>
@@ -39,22 +39,19 @@ function Landing() {
 
                     <div class="row">
                         <div class="col-lg-4">
-                        <img src={require("./feature-tile-icon-05.svg")} class="bd-placeholder-img rounded-circle" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
+                        <img src={require("./feature-tile-icon-05.svg")} class="bd-placeholder-img rounded-circle" alt="yarnImg" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
                             <h2>Quality Guaranteed</h2>
                             <p>For over 20 years we have guaranteed our Yarn Quality. Return goods within 3 business days if not satisfactory**</p>
-                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                         </div>
                         <div class="col-lg-4">
-                        <img src={require("./feature-tile-icon-01.svg")} class="bd-placeholder-img rounded-circle" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
+                        <img src={require("./feature-tile-icon-01.svg")} class="bd-placeholder-img rounded-circle" alt="yarnImg" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
                             <h2>On-time Delivery</h2>
                             <p>We deliver in one or two business days from the day of invoice given that we are stocked on your purchase. For details visit out inventory section.</p>
-                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                         </div>
                         <div class="col-lg-4">
-                            <img src={require("./feature-tile-icon-02.svg")} class="bd-placeholder-img rounded-circle" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
+                            <img src={require("./feature-tile-icon-02.svg")} class="bd-placeholder-img rounded-circle" alt="yarnImg" preserveAspectRatio="xMidYMid slice" width="140" height="140"></img>
                             <h2>Pay Online/via Cheque</h2>
                             <p>Owing to the current pandemic we only take online payments either via Net Banking or via a Cheque posted to our address.</p>
-                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                         </div>
                     </div>
 
@@ -69,7 +66,7 @@ function Landing() {
                         <div class="col-md-5">
                             {/* <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src={require("./tile-1.jpg")} preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></img> */}
                             <br></br><br></br><br></br><br></br>
-                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src={require("./tile-1.jpg")}></img>
+                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="" width="500" height="500" src={require("./tile-1.jpg")}></img>
                         </div>
                     </div>
 
@@ -83,7 +80,7 @@ function Landing() {
                         <div class="col-md-5 order-md-1">
                             {/* <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> */}
                             <br></br><br></br><br></br><br></br>
-                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src={require("./tile-5.jpg")}></img>
+                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="" width="500" height="500" src={require("./tile-5.jpg")}></img>
                         </div>
                     </div>
 
@@ -97,7 +94,7 @@ function Landing() {
                         <div class="col-md-5">
                             {/* <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> */}
                             <br></br><br></br><br></br><br></br>
-                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src={require("./tile-4.jpg")}></img>
+                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="" width="500" height="500" src={require("./tile-4.jpg")}></img>
                         </div>
                     </div>
 
@@ -108,7 +105,7 @@ function Landing() {
 
 
                 <footer class="container">
-                    <p class="float-right"><a href="#">Back to top</a></p>
+                    <p class="float-right"><a href="#top">Back to top</a></p>
                     <p>&copy; 1997-2020 Company, Inc.</p>
                 </footer>
             </main>

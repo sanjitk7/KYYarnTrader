@@ -40,7 +40,7 @@ function Inq() {
                     text: { stroke: "none", fill: "#6b6b76", fontWeight: 600 },
                     title: { fill: "#6b6b76", fontWeight: 600 }
                 }} />
-                <YAxis title="Inquires" style={{
+                <YAxis title="Inquiries" style={{
                     line: { stroke: "#FF7F50" },
                     ticks: { stroke: "#ADDDE1" },
                     text: { stroke: "none", fill: "#6b6b76", fontWeight: 600 },

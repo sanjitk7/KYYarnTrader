@@ -25,7 +25,7 @@ function Sidebar(props) {
                     <li class="nav-item">
                         <a class={props.name === "Inquiries" ? "nav-link active" : "nav-link"} href="/dashboard/Inquiries">
                             <span data-feather="file"></span>
-                            {props.name === "Inquiries" ? <>Inquires <span className="sr-only">(current)</span></> : <>Inquires</>}
+                            {props.name === "Inquiries" ? <>Inquiries <span className="sr-only">(current)</span></> : <>Inquiries</>}
                         </a>
                     </li>
                     <li class="nav-item">

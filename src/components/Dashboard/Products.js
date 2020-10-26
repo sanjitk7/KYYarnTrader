@@ -10,7 +10,7 @@ function Products() {
     const [update, setUpdate] = React.useState(0)
     const [uploading, setUploading] = React.useState(0)
     const [picture, setPicture] = React.useState()
-    const [error, setError] = React.useState()
+    // const [error, setError] = React.useState()
     const [newProduct, setNewProduct] = React.useState({
         pCount: "",
         pAvailability: "",
