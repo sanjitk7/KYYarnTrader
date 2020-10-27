@@ -3,18 +3,20 @@
 }
 
 #box1{
-  background-color:#d0d0ce;
+  background-color:#000000;
   padding: 0 10px 0 10px;
   /* border-radius: 2%; */
 }
 #title{
-  color:#000;
-  font-style:italic;
+  color:rgb(53, 144, 219);
+  /* font-style:italic; */
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 #hhh{
-  color:black;
+  color:rgb(223, 219, 219);
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 .carousel-caption {
   bottom: 3rem;
