@@ -29,7 +29,12 @@ function Product() {
                                 <div className="card-body">
                                     <h5 className="card-title">{product.pColor}</h5>
                                     <p className="card-text">{product.pDesc}</p>
+                                    <p className="card-text">Yarn Count: {product.pCount}</p>
+                                    <p className="card-text">Price Est: {product.pPriceEst}</p>
+                                    <p className="card-text">Availability: {product.pPriceEst?<>Yes</>:<>No</>}</p>
+                                    <p className="card-text">Current Stock: {product.pQty}</p>
                                     <p className="card-text"><small className="text-muted">Code: {product.pCode}</small></p>
+                                    
                                 </div>
                             </div>
                         )
