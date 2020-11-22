@@ -6,7 +6,7 @@ function Sidebar(props) {
     const [user, setUser] = React.useState()
     const [loading, setLoading] = React.useState(true);
     React.useEffect(() => {
-        axios.get("http://127.0.0.1:4000/employee/me", {
+        axios.get(`${process.env.REACT_APP_API_BASE_URL}employee/me`, {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth")
             }

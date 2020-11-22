@@ -17,7 +17,7 @@ function State() {
 
     React.useEffect(() => {
         axios
-            .get("http://127.0.0.1:4000/visualisations/state-to-inquiries-pie")
+            .get(`${process.env.REACT_APP_API_BASE_URL}/visualisations/state-to-inquiries-pie`)
             .then((response) => {
                 console.log("res data", response.data);
                 setPieData(response.data);
@@ -28,7 +28,7 @@ function State() {
             });
 
         axios
-            .get("http://127.0.0.1:4000/visualisations/state-to-inquiries-bar")
+            .get(`${process.env.REACT_APP_API_BASE_URL}/visualisations/state-to-inquiries-bar`)
             .then((response) => {
                 console.log("res data", response.data);
                 setBarData(response.data);

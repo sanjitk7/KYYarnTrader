@@ -16,7 +16,7 @@ function Create() {
     function HandleSubmit(event) {
         event.preventDefault();
         setLoading("true")
-        axios.post("http://127.0.0.1:4000/employee/create-employee", qs.stringify(form), {
+        axios.post(`${process.env.REACT_APP_API_BASE_URL}/employee/create-employee`, qs.stringify(form), {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth"),
                 "Content-Type": "application/x-www-form-urlencoded"

@@ -12,6 +12,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
+          {process.env.API_BASE_URL}
             <Landing />
           </Route>
           <Route path="/products">

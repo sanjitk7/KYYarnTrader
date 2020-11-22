@@ -48,7 +48,7 @@ function Inquiry() {
     function HandleSubmit(event) {
         setStatus(1)
         event.preventDefault();
-        axios.post("http://127.0.0.1:4000/inquiry", inq, {
+        axios.post(`${process.env.REACT_APP_API_BASE_URL}/inquiry`, inq, {
             headers: {
                 // "Content-Type": "application/x-www-form-urlencoded"
                 "Content-Type": "application/json"

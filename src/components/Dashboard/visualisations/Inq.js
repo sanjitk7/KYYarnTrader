@@ -15,7 +15,7 @@ function Inq() {
 
     React.useEffect(() => {
         axios
-            .get("http://127.0.0.1:4000/visualisations/product-to-inquiry-count")
+            .get(`${process.env.REACT_APP_API_BASE_URL}/visualisations/product-to-inquiry-count`)
             .then((response) => {
                 console.log("res data", response.data);
                 setData(response.data);

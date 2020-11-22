@@ -9,7 +9,7 @@ function Products() {
     const final = new FormData();
     const [loading, setLoading] = React.useState(true)
     const [update, setUpdate] = React.useState(0)
-    const [edit, setEdit] = React.useState(0)
+    const [edit] = React.useState(0)
     const [editing, setEditing] = React.useState(0)
     const [uploading, setUploading] = React.useState(0)
     const [picture, setPicture] = React.useState()
@@ -35,7 +35,7 @@ function Products() {
 
 
     React.useEffect(() => {
-        axios.get("http://127.0.0.1:4000/products/summary").then(response => {
+        axios.get(`${process.env.REACT_APP_API_BASE_URL}/products/summary`).then(response => {
             setProducts(response.data)
             console.log(response.data);
             setLoading(false)
@@ -53,7 +53,7 @@ function Products() {
     function HandleClick(product) {
         const id = product.pCode;
         setUpdate(1)
-        axios.delete("http://127.0.0.1:4000/products/" + id, {
+        axios.delete(`${process.env.REACT_APP_API_BASE_URL}/products/` + id, {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth")
             }
@@ -64,21 +64,21 @@ function Products() {
         })
 
     }
-    // Here
-    function HandleProductEdit(product) {
-        const id = product.pCode;
-        setEdit(1)
-        axios.patch("http://127.0.0.1:4000/products/" + id, {
-            headers: {
-                'Authorization': 'Bearer ' + Cookies.get("auth")
-            }
-        }).then(response => {
-            console.log(response.status);
+    // // Here
+    // function HandleProductEdit(product) {
+    //     const id = product.pCode;
+    //     setEdit(1)
+    //     axios.patch(`${process.env.REACT_APP_API_BASE_URL}/products/` + id, {
+    //         headers: {
+    //             'Authorization': 'Bearer ' + Cookies.get("auth")
+    //         }
+    //     }).then(response => {
+    //         console.log(response.status);
 
-            setLoading(true)
-        })
+    //         setLoading(true)
+    //     })
 
-    }
+    // }
 
     function HandleChange(event) {
         const name = event.target.name
@@ -119,7 +119,7 @@ function Products() {
         console.log("stuck");
         // if (!(picture === undefined || picture === null)) {
         console.log("success");
-        axios.post("http://127.0.0.1:4000/products", final, {
+        axios.post(`${process.env.REACT_APP_API_BASE_URL}/products`, final, {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth"),
                 "Content-Type": `multipart/form-data; boundary=${final._boundary}`
@@ -154,7 +154,7 @@ function Products() {
         // if (!(picture === undefined || picture === null)) {
         console.log("success");
         console.log("this is thisClicked in handleEditSubmit", clickedEditProduct.pCode)
-        axios.patch("http://127.0.0.1:4000/products/" + clickedEditProduct.pCode ,qs.stringify(editedProduct),{
+        axios.patch(`${process.env.REACT_APP_API_BASE_URL}/products/` + clickedEditProduct.pCode ,qs.stringify(editedProduct),{
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth"),
                 "Content-Type": "application/x-www-form-urlencoded"

@@ -7,7 +7,7 @@ function Product() {
     const [loading, setLoading] = React.useState(true)
     React.useEffect(() => {
         axios
-            .get("http://127.0.0.1:4000/products/summary")
+            .get(`${process.env.REACT_APP_API_BASE_URL}/products/summary`)
             .then((response) => {
                 setProducts(response.data)
                 setLoading(false)
@@ -24,8 +24,8 @@ function Product() {
                 <div className="card-columns mb-5">
                     {!loading ? products.map((product) => {
                         return (
-                            <div className="card">
-                                <img src={"http://127.0.0.1:4000/products/picture/" + product.pCode} className="card-img-top" alt="..." />
+                            <div key={product._id} className="card">
+                                <img src={`${process.env.REACT_APP_API_BASE_URL}/products/picture/` + product.pCode} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{product.pColor}</h5>
                                     <p className="card-text">{product.pDesc}</p>

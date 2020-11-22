@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import '../Landing/Landing.css'
 
+// {console.log(process.env)}
+
 function Landing() {
     return (
         <div>
