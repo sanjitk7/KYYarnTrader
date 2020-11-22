@@ -19,8 +19,8 @@ function Inquiries() {
     }, [])
 
     return (
-        <div class="table-responsive">
-            <table class="table table-striped table-sm">
+        <div className="table-responsive">
+            <table className="table table-striped table-sm">
                 <thead>
                     <tr>
                         <th>Name</th>

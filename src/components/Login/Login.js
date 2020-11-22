@@ -32,7 +32,7 @@ function Login() {
                 "email": formState.email,
                 "password": formState.password
             }
-            axios.post("http://127.0.0.1:4000/employee/login", qs.stringify(payload), {
+            axios.post(`${process.env.REACT_APP_API_BASE_URL}/employee/login`, qs.stringify(payload), {
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
@@ -53,30 +53,30 @@ function Login() {
         return (
             <>
                 <Navbar />
-                <div class="container container-login">
-                    <div class="card login-card">
-                        <div class="row no-gutters">
-                            <div class="col-md-5">
-                                <img src="yarn.jpg" alt="login" class="login-card-img" />
+                <div className="container container-login">
+                    <div className="card login-card">
+                        <div className="row no-gutters">
+                            <div className="col-md-5">
+                                <img src="yarn.jpg" alt="login" className="login-card-img" />
                             </div>
-                            <div class="col-md-7">
-                                <div class="card-body">
-                                    <div class="brand-wrapper">
+                            <div className="col-md-7">
+                                <div className="card-body">
+                                    <div className="brand-wrapper">
                                         <h1>Kumar Yarns</h1>
                                     </div>
-                                    <p class="login-card-description">Sign into your account</p>
+                                    <p className="login-card-description">Sign into your account</p>
                                     <form action="#!">
-                                        <div class="form-group">
-                                            <label for="email" class="sr-only">Email</label>
-                                            <input type="email" name="email" id="email" class="form-control" placeholder="Email address" onChange={HandleChange} />
+                                        <div className="form-group">
+                                            <label for="email" className="sr-only">Email</label>
+                                            <input type="email" name="email" id="email" className="form-control" placeholder="Email address" onChange={HandleChange} />
                                         </div>
-                                        <div class="form-group mb-4">
-                                            <label for="password" class="sr-only">Password</label>
-                                            <input type="password" name="password" id="password" class="form-control" placeholder="***********" onChange={HandleChange} />
+                                        <div className="form-group mb-4">
+                                            <label for="password" className="sr-only">Password</label>
+                                            <input type="password" name="password" id="password" className="form-control" placeholder="***********" onChange={HandleChange} />
                                         </div>
-                                        {loading === "false" ? <button name="login" id="login" class="btn btn-block login-btn mb-4" type="button" onClick={HandleSubmit}>Login</button>
-                                            : loading === "Try Again" ? <button name="login" id="login" class="btn btn-block login-btn mb-4" type="button" onClick={HandleSubmit}>{loading}</button> :
-                                                <button name="login" id="login" class="btn btn-block login-btn mb-4" type="button" disabled >Loading</button>}                                    </form>
+                                        {loading === "false" ? <button name="login" id="login" className="btn btn-block login-btn mb-4" type="button" onClick={HandleSubmit}>Login</button>
+                                            : loading === "Try Again" ? <button name="login" id="login" className="btn btn-block login-btn mb-4" type="button" onClick={HandleSubmit}>{loading}</button> :
+                                                <button name="login" id="login" className="btn btn-block login-btn mb-4" type="button" disabled >Loading</button>}                                    </form>
                                 </div>
                             </div>
                         </div>
