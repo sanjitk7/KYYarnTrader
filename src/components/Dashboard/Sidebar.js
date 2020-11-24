@@ -6,7 +6,7 @@ function Sidebar(props) {
     const [user, setUser] = React.useState()
     const [loading, setLoading] = React.useState(true);
     React.useEffect(() => {
-        axios.get(`${process.env.REACT_APP_API_BASE_URL}employee/me`, {
+        axios.get(`${process.env.REACT_APP_API_BASE_URL}/employee/me`, {
             headers: {
                 'Authorization': 'Bearer ' + Cookies.get("auth")
             }
@@ -34,6 +34,7 @@ function Sidebar(props) {
                             {props.name === "Products" ? <>Products <span className="sr-only">(current)</span></> : <>Products</>}
                         </a>
                     </li>
+                    {console.log({"loading":loading,"user.isAdmin":user,"props.name":props.name})}
                     {!loading && user.isAdmin && <li className="nav-item">
                         <a className={props.name === "Create" ? "nav-link active" : "nav-link"} href="/dashboard/Create">
                             <span data-feather="shopping-cart"></span>

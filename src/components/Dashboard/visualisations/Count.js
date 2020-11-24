@@ -19,7 +19,7 @@ function Count() {
 
 
     React.useEffect(() => {
-        axios.get(`${process.env.REACT_APP_API_BASE_URL}visualisations/count-to-inquiries`)
+        axios.get(`${process.env.REACT_APP_API_BASE_URL}/visualisations/count-to-inquiries`)
             .then((response) => {
                 console.log("res data", response.data)
                 setData(response.data)
