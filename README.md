@@ -17,6 +17,8 @@ ReactJS Frontend
 4. Public Products Page (Only R, No CUD)
 5. Public Home Page (Information about Company)
 
+**For more details and further analysis/study check out the complete documentation (in the pov of 1.[Human Computer Interaction](./docs/hci_doc.pdf) 2.[Software Engineering](./docs/se_doc.pdf) 3. [Internet and Web Programming](./docs/iwp_doc.pdf)) in the docs folder.\**
+
 ## Frontend flow
 
 ![flow](./public/img/yarn-frontend-1.png)
