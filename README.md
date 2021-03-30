@@ -83,8 +83,6 @@ The production build is [deployed](http://sanjit-yarn-trading-frontend.herokuapp
 
 Find the backend server repository [here](https://github.com/sanjitk7/yarnTradingCompanyBackendv1)
 
-Find a previous version of the frontend repository [here](https://github.com/sanjitk7/yarnTradingCompanyBackendv1)
+Frontend is hosted [here](http://sanjit-yarn-trading-frontend.herokuapp.com)
 
-Backend is hosted in a Express Server - http://sanjit-yarn-trading-frontend.herokuapp.com
-
-Backend is hosted in a different Express Server - https://sanjit-yarn-trading-backend.herokuapp.com
+Backend is hosted [here](https://sanjit-yarn-trading-backend.herokuapp.com)
